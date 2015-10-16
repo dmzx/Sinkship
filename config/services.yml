@@ -1,0 +1,15 @@
+services:
+    dmzx.sinkship.listener:
+        class: dmzx\sinkship\event\listener
+        arguments:
+            - @user
+            - @template
+            - @controller.helper
+        tags:
+            - { name: event.listener }
+    dmzx.sinkship.controller:
+        class: dmzx\sinkship\controller\sinkship
+        arguments:
+            - @template
+            - @user
+            - @controller.helper            

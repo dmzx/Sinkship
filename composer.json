@@ -1,0 +1,32 @@
+{
+	"name": "dmzx/sinkship",
+	"type": "phpbb-extension",
+	"description": "Play a little Javascript game sinkship",
+	"homepage": "http://www.dmzx-web.net",
+	"version": "1.0.0",
+	"time": "2015-10-12",
+	"keywords": ["phpbb", "extension", "shinkship"],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "dmzx",
+			"homepage": "http://www.dmzx-web.net",
+			"email": "info@dmzx-web.net",
+			"role": "Extension Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"extra": {
+		"display-name": "Sinkship",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.1.x,<3.2.*@dev"
+		},
+		"version-check": {
+			"host": "www.dmzx-web.net",
+			"directory": "/versions",
+			"filename": "sinkship_version.json"
+		}
+	}
+}

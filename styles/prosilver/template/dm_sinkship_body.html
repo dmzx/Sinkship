@@ -1,0 +1,53 @@
+<!-- INCLUDE overall_header.html -->
+
+<script type="text/javascript">
+// <![CDATA[
+function get_shiptypes()
+{
+	var shiptypes = [["{LA_MINE_SWEEPER}",2,4],["{LA_FRIGATE}",3,4],[ "{LA_CRUSIER}",4,2],[ "{LA_BARTTLESHIP}",5,1]];
+	return shiptypes;
+}
+function get_languages()
+{
+	var languages = {
+		'Loading'		: "{LA_LOADING}",
+		'The_computer'	: "{LA_THE_COMPUTER}",
+		'Computer_Fleet': "{LA_COMPUTER_FLEET}",
+		'Your_Fleet'	: "{LA_YOUR_FLEET}",
+		'I_sunk'		: "{LA_I_SUNK}",
+		'You_won'		: "{LA_YOU_WON}",
+		'You_sunk'		: '{LA_YOU_SUNK}',
+		'You_lost'		: "{LA_YOU_LOST}",
+		'Your_guilt'	: "{LA_YOU_GUILT}"
+	};
+	return languages;
+}
+// ]]>
+</script>
+
+<div class="forabg">
+	<div class="inner">
+	<ul class="topiclist">
+		<li class="header">
+			<dl class="icon">
+				<dt>{L_SINK_TITLE}</dt>
+			</dl>
+		</li>
+	</ul>
+	<ul class="topiclist">
+		<li class="row_grey">
+			<div align="center" style="color: #006699; font-size: 10pt;">
+				<br />{L_SINK_DESC}<br />
+				<iframe frameborder="0" height="450" width="720" scrolling="no" src="{BOARD_URL}ext/dmzx/sinkship/styles/prosilver/template/dm_sinkship_script.html"></iframe>
+				<br /><input type="button" value="{L_RELOAD_PAGE}" onClick="window.location.reload()"><br /><br />
+			</div>
+		</li>
+	</ul>
+	</div>
+</div>
+<br />
+<div style="text-align: center;" class="copyright">{L_SINK_COPY}</div><br />
+<div style="text-align: center;" class="copyright">{L_SINK_COPYRIGHT}</div>
+<br />
+
+<!-- INCLUDE overall_footer.html -->

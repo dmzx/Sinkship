@@ -1,0 +1,3 @@
+dmzx_sinkship_controller:
+    path: /sinkship
+    defaults: { _controller: dmzx.sinkship.controller:handle_sinkship }
